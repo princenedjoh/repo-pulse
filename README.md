@@ -1,12 +1,16 @@
 # repo-pulse
 
-[![npm](https://img.shields.io/npm/v/repo-pulse)](https://www.npmjs.com/package/repo-pulse)
+[![npm](https://img.shields.io/npm/v/@princenedjoh/repo-pulse)](https://www.npmjs.com/package/@princenedjoh/repo-pulse)
 [![CI](https://github.com/princenedjoh/repo-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/princenedjoh/repo-pulse/actions/workflows/ci.yml)
 
 A terminal dashboard for a folder full of git repos. See at a glance which projects have uncommitted changes, unpushed commits or are behind their remote, and what stack each one runs. Then fetch, pull, open or browse them without leaving the keyboard.
 
 ```sh
-npx repo-pulse ~/projects
+npm i -g @princenedjoh/repo-pulse   # installs the `repo-pulse` command
+```
+
+```sh
+npx @princenedjoh/repo-pulse ~/projects
 ```
 
 ```

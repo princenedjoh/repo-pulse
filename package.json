@@ -1,5 +1,5 @@
 {
-  "name": "repo-pulse",
+  "name": "@princenedjoh/repo-pulse",
   "version": "0.1.0",
   "description": "A terminal dashboard for a folder full of git repos: dirty files, unpushed commits, framework versions and bulk actions.",
   "keywords": [
