@@ -1,0 +1,58 @@
+{
+  "name": "repo-pulse",
+  "version": "0.1.0",
+  "description": "A terminal dashboard for a folder full of git repos: dirty files, unpushed commits, framework versions and bulk actions.",
+  "keywords": [
+    "git",
+    "cli",
+    "tui",
+    "ink",
+    "dashboard",
+    "multi-repo",
+    "status",
+    "productivity"
+  ],
+  "homepage": "https://github.com/princenedjoh/repo-pulse#readme",
+  "bugs": {
+    "url": "https://github.com/princenedjoh/repo-pulse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princenedjoh/repo-pulse.git"
+  },
+  "license": "MIT",
+  "author": "Prince Nedjoh (https://github.com/princenedjoh)",
+  "type": "module",
+  "bin": {
+    "repo-pulse": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "ink": "^5.2.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.31",
+    "ink-testing-library": "^4.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9",
+    "vitest": "^4.1.12"
+  }
+}
